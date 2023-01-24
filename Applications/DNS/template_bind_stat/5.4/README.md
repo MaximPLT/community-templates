@@ -7,7 +7,14 @@
  Zabbix Server 4+ and above  
  Zabbix Agent on monitored host  
   
-  
+# By default bind does not export per zone statistics
+# You need to include zone-statistics yes; in option sections
+
+options {
+  ...
+  zone-statistics yes;
+  ..
+ }
 **How it works**  
 Include statistics in named.conf  
   
