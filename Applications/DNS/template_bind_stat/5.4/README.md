@@ -9,6 +9,15 @@
   
   
 **How it works**  
+# By default bind does not export per sone statitic
+# Include "zone-statistics yes;" in options { } section 
+
+options { 
+ ...
+ zone-statistics yes;
+ ...
+}
+
 Include statistics in named.conf  
   
 statistics-channels {  
